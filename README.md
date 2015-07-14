@@ -116,7 +116,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.yongjhih.recyclerlist:recyclerlist:-SNAPSHOT'
+    compile 'com.github.yongjhih:recyclerlist:-SNAPSHOT'
 }
 ```
 
