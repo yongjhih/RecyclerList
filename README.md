@@ -94,7 +94,7 @@ public class IconViewHolder extends BindViewHolder<String> {
 
 ## Installation
 
-via jcenter:
+via jcenter(in progress):
 
 ```gradle
 repositories {
@@ -106,7 +106,7 @@ dependencies {
 }
 ```
 
-via jitpack.io:
+via jitpack.io(in progress):
 
 ```gradle
 repositories {
@@ -116,7 +116,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.yongjhih.recyclerlist:recyclerlist:1.0.0'
+    compile 'com.github.yongjhih.recyclerlist:recyclerlist:-SNAPSHOT'
 }
 ```
 
