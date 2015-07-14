@@ -1,7 +1,5 @@
 # recyclerlist
 
-[![Join the chat at https://gitter.im/yongjhih/recyclerlist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yongjhih/recyclerlist?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![Download](https://api.bintray.com/packages/yongjhih/maven/recyclerlist/images/download.svg) ](https://bintray.com/yongjhih/maven/recyclerlist/_latestVersion)
 [![JitPack](https://img.shields.io/github/tag/yongjhih/recyclerlist.svg?label=JitPack)](https://jitpack.io/#yongjhih/recyclerlist)
 [![Build Status](https://travis-ci.org/yongjhih/recyclerlist.svg)](https://travis-ci.org/yongjhih/recyclerlist)
