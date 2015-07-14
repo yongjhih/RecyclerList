@@ -38,3 +38,5 @@ dependencies {
     compile 'io.reactivex:rxjava:1.0.8'
     compile 'io.reactivex:rxandroid:0.24.0'
 }
+
+apply from: 'mvn-push.gradle'
