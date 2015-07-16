@@ -94,7 +94,7 @@ public class IconViewHolder extends BindViewHolder<String> {
 
 ## Installation
 
-via jcenter(in progress):
+via jcenter:
 
 ```gradle
 repositories {
