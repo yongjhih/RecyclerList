@@ -106,7 +106,7 @@ dependencies {
 }
 ```
 
-via jitpack.io(in progress):
+via jitpack.io:
 
 ```gradle
 repositories {
