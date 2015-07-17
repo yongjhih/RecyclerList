@@ -1,4 +1,4 @@
-# recyclerlist
+# RecyclerList
 
 [![Download](https://api.bintray.com/packages/yongjhih/maven/recyclerlist/images/download.svg) ](https://bintray.com/yongjhih/maven/recyclerlist/_latestVersion)
 [![JitPack](https://img.shields.io/github/tag/yongjhih/recyclerlist.svg?label=JitPack)](https://jitpack.io/#yongjhih/recyclerlist)
