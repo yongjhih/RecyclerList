@@ -1,5 +1,6 @@
 # RecyclerList
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RecyclerList-green.svg?style=flat)](https://android-arsenal.com/details/1/2151)
 [![Download](https://api.bintray.com/packages/yongjhih/maven/recyclerlist/images/download.svg) ](https://bintray.com/yongjhih/maven/recyclerlist/_latestVersion)
 [![JitPack](https://img.shields.io/github/tag/yongjhih/recyclerlist.svg?label=JitPack)](https://jitpack.io/#yongjhih/recyclerlist)
 [![Build Status](https://travis-ci.org/yongjhih/recyclerlist.svg)](https://travis-ci.org/yongjhih/recyclerlist)
