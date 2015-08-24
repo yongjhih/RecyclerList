@@ -19,8 +19,8 @@ package com.infstory.v7.widget;
 import android.view.View;
 import android.support.v7.widget.RecyclerView;
 
-public abstract class BindViewHolder<T> extends RecyclerView.ViewHolder {
-    public BindViewHolder(View itemView) {
+public abstract class Presenter<T> extends RecyclerView.ViewHolder {
+    public Presenter(View itemView) {
         super(itemView);
     }
 

@@ -26,7 +26,7 @@ import java.util.List;
 
 import rx.functions.*;
 
-public class ListRecyclerAdapter<T, VH extends BindViewHolder<T>> extends RecyclerView.Adapter<VH> {
+public class ListRecyclerAdapter<T, VH extends Presenter<T>> extends RecyclerView.Adapter<VH> {
     private List<T> mList = Collections.emptyList();
     protected Action3<VH, Integer, T> mOnBindViewHolder;
     protected Func2<ViewGroup, Integer, VH> mOnCreateViewHolder;
@@ -35,11 +35,11 @@ public class ListRecyclerAdapter<T, VH extends BindViewHolder<T>> extends Recycl
         mList = list;
     }
 
-    public static <R, VHH extends BindViewHolder<R>> ListRecyclerAdapter<R, VHH> create() {
+    public static <R, VHH extends Presenter<R>> ListRecyclerAdapter<R, VHH> create() {
         return create(new ArrayList<>());
     }
 
-    public static <R, VHH extends BindViewHolder<R>> ListRecyclerAdapter<R, VHH> create(List<R> list) {
+    public static <R, VHH extends Presenter<R>> ListRecyclerAdapter<R, VHH> create(List<R> list) {
         return new ListRecyclerAdapter<>(list);
     }
 
