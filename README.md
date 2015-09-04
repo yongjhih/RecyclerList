@@ -81,14 +81,14 @@ public class IconPresenter extends Presenter<String> {
     @InjectView(R.id.icon)
     public SimpleDraweeView icon;
 
-    public IconViewHolder(View itemView) {
+    public IconPresenter(View itemView) {
         super(itemView);
         ButterKnife.inject(this, itemView);
     }
 
     @Override
     public void onBind(int position, String item) {
-        icon.setImageURI(IconViewHolder(Uri.parse(item)));
+        icon.setImageURI(Uri.parse(item));
     }
 }
 ```

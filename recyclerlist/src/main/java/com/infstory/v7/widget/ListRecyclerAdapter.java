@@ -29,7 +29,7 @@ import rx.functions.*;
 public class ListRecyclerAdapter<T, VH extends Presenter<T>> extends RecyclerView.Adapter<VH> {
     private List<T> mList = Collections.emptyList();
     protected Action3<VH, Integer, T> mOnBindViewHolder;
-    protected Func2<ViewGroup, Integer, VH> mOnCreateViewHolder;
+    protected Func2<ViewGroup, Integer, VH> mPresenter;
 
     public ListRecyclerAdapter(List<T> list) {
         mList = list;
@@ -45,12 +45,12 @@ public class ListRecyclerAdapter<T, VH extends Presenter<T>> extends RecyclerVie
 
     @Override
     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
-        if (mOnCreateViewHolder != null) return mOnCreateViewHolder.call(parent, viewType);
+        if (mPresenter != null) return mPresenter.call(parent, viewType);
         return null;
     }
 
-    public ListRecyclerAdapter<T, VH> createViewHolder(Func2<ViewGroup, Integer, VH> onCreateViewHolder) {
-        mOnCreateViewHolder = onCreateViewHolder;
+    public ListRecyclerAdapter<T, VH> createPresenter(Func2<ViewGroup, Integer, VH> presenter) {
+        mPresenter = presenter;
         return this;
     }
 
