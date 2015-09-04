@@ -63,10 +63,10 @@ public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     ButterKnife.inject(this);
 
-    ListRecyclerAdapter<String, IconViewHolder> listAdapter = ListRecyclerAdapter.create();
+    ListRecyclerAdapter<String, IconPresenter> listAdapter = ListRecyclerAdapter.create();
     listAdapter.getList().add("http://example.com/a.png");
 
-    listAdapter.createViewHolder((parent, viewType) -> new IconViewHolder(LayoutInflater.from(context).inflate(R.layout.item_icon, parent, false)));
+    listAdapter.createPresenter((parent, viewType) -> new IconPresenter(LayoutInflater.from(context).inflate(R.layout.item_icon, parent, false)));
 
     icons.setLayoutManager(new LinearLayoutManager(activity));
     icons.setAdapter(listAdapter);
@@ -77,7 +77,7 @@ public void onCreate(Bundle savedInstanceState) {
 ```
 
 ```java
-public class IconViewHolder extends BindViewHolder<String> {
+public class IconPresenter extends Presenter<String> {
     @InjectView(R.id.icon)
     public SimpleDraweeView icon;
 
