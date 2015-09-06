@@ -24,12 +24,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import rx.functions.*;
-
 public class ListRecyclerAdapter<T, VH extends Presenter<T>> extends RecyclerView.Adapter<VH> {
     private List<T> mList = Collections.emptyList();
     protected Action3<VH, Integer, T> mOnBindViewHolder;
     protected Func2<ViewGroup, Integer, VH> mPresenter;
+
+    interface Func2<T1, T2, R> {
+        R call(T1 t1, T2 t2);
+    }
+
+    interface Action3<T1, T2, T3> {
+        void call(T1 t1, T2 t2, T3 t3);
+    }
 
     public ListRecyclerAdapter(List<T> list) {
         mList = list;
