@@ -53,7 +53,7 @@ publish {
     userOrg = 'yongjhih'
     groupId = 'com.infstory'
     artifactId = 'recyclerlist'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     desc = 'RecyclerList'
     website = 'https://github.com/yongjhih/RecyclerList'
     bintrayUser = getRepositoryUsername()
