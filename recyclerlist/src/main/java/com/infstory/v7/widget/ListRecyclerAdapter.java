@@ -29,11 +29,11 @@ public class ListRecyclerAdapter<T, VH extends Presenter<T>> extends RecyclerVie
     protected Action3<VH, Integer, T> mOnBindViewHolder;
     protected Func2<ViewGroup, Integer, VH> mPresenter;
 
-    interface Func2<T1, T2, R> {
+    public interface Func2<T1, T2, R> {
         R call(T1 t1, T2 t2);
     }
 
-    interface Action3<T1, T2, T3> {
+    public interface Action3<T1, T2, T3> {
         void call(T1 t1, T2 t2, T3 t3);
     }
 
